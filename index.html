@@ -1,0 +1,103 @@
+initial-scale=1.0">
+    <title>Login · Belajar Interaktif</title>
+    <!-- Font & Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(145deg, #0b1120 0%, #1a2639 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        /* Kartu utama */
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 3.5rem 3.5rem 2.5rem 2.5rem;
+            box-shadow: 0 25px 50px -8px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+            padding: 2.8rem 2.5rem;
+            max-width: 520px;
+            width: 100%;
+            transition: 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        /* Header */
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .brand i {
+            font-size: 2.8rem;
+            color: #7c9bff;
+            filter: drop-shadow(0 0 12px rgba(100, 150, 255, 0.3));
+        }
+
+        .brand h1 {
+            font-weight: 600;
+            font-size: 2.1rem;
+            letter-spacing: -0.5px;
+            color: #f0f4ff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .brand span {
+            color: #9bb6ff;
+            font-weight: 300;
+        }
+
+        /* Form login */
+        .login-box {
+            background: rgba(12, 20, 35, 0.5);
+            border-radius: 2rem;
+            padding: 2rem 1.8rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            box-shadow: inset 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 60px;
+            padding: 0.2rem 0.2rem 0.2rem 1.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: 0.25s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .input-group:focus-within {
+            border-color: #7c9bff;
+            background: rgba(255, 255, 255, 0.07);
+            box-shadow: 0 0 0 4px rgba(100, 150, 255, 0.15), 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .input-group i {
+            color: #8aa4ff;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .input-group input {
+            background: transparent;
+            border: none;
+            padding: 1rem 1rem 1rem 0.8rem;
+            font-size: 1.1rem;
+            color: #f0f4ff;
+            width: 100%;
+            outline: none;
